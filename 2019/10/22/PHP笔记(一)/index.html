@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="PHP介绍 PHP（英文名：Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。利于学习，使用广泛，主要适用于web开发领域。  PHP环境安装WAMP（Windows）（推荐）XAMPP（Windows&#x2F;Mac）Mamp（Mac）（推荐）Lamp（Linux） 构建虚拟主机作用：能够快速定位需要使用的文件，不需要每次都繁琐的打上路径。例：    ww">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-24T16:34:49.547Z">
+<meta property="og:updated_time" content="2019-10-25T15:24:04.692Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -289,7 +289,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-10-25 00:34:49'>2019-10-22 19:45</time>
+        创建时间:<time class="date" title='更新时间: 2019-10-25 23:24:04'>2019-10-22 19:45</time>
         
     </div>
     <div class="article-meta">
@@ -311,7 +311,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP介绍"><span class="toc-text">PHP介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP环境安装"><span class="toc-text">PHP环境安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#构建虚拟主机"><span class="toc-text">构建虚拟主机</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编辑器选择"><span class="toc-text">编辑器选择</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP基础语法"><span class="toc-text">PHP基础语法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#执行符与空白与注释"><span class="toc-text">执行符与空白与注释</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP介绍"><span class="toc-text">PHP介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP环境安装"><span class="toc-text">PHP环境安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#构建虚拟主机"><span class="toc-text">构建虚拟主机</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编辑器选择"><span class="toc-text">编辑器选择</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP基础语法"><span class="toc-text">PHP基础语法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#执行符与空白与注释"><span class="toc-text">执行符与空白与注释</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#弱类型说明"><span class="toc-text">弱类型说明</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#传值与传址"><span class="toc-text">传值与传址</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -341,6 +341,14 @@
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">'123'</span></span><br><span class="line"></span><br><span class="line">	;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
 <p><strong>注释</strong>相当于代码的说明，<strong>很重要</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//单行注释</span><br><span class="line"></span><br><span class="line">#单行注释</span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line">多</span><br><span class="line">行</span><br><span class="line">注</span><br><span class="line">释</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+
+<h1 id="弱类型说明"><a href="#弱类型说明" class="headerlink" title="弱类型说明"></a>弱类型说明</h1><p>PHP中，我们不必告知变量的数据类型，PHP会根据它的值，自动把变量转换为正确的数据类型（C或C++以及Java等语言中，使用变量之前必须声明变量的名称和数据类型）</p>
+<h1 id="传值与传址"><a href="#传值与传址" class="headerlink" title="传值与传址"></a>传值与传址</h1><p>传值会在内存中开辟一块新的空间，不会影响初始变量的值。而传址则是传递该地址中的内容，会影响初始变量的值，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">	$a = 1;</span><br><span class="line">	$b = $a;</span><br><span class="line">	echo $a;</span><br><span class="line">	echo $b;</span><br><span class="line">	$b = 3;</span><br><span class="line">	echo $a;</span><br><span class="line">	echo $b;</span><br><span class="line"> ?&gt;</span><br></pre></td></tr></table></figure>
+<p>上面代码中变量b的值改变不会影响变量a，而：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">	$a = 1;</span><br><span class="line">	$b = &amp;$a;</span><br><span class="line">	echo $a;</span><br><span class="line">	echo $b;</span><br><span class="line">	$b = 3;</span><br><span class="line">	echo $a;</span><br><span class="line">	echo $b;</span><br><span class="line"> ?&gt;</span><br></pre></td></tr></table></figure>
+<p> 以上的代码中变量a和变量b是同一个地址，改变其中一个另一个也会改变</p>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
@@ -357,7 +365,7 @@
     
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="gloryemperor">gloryemperor</a></p>
     <p><span class="copy-title">发布时间:</span>2019-10-22, 19:45:52</p>
-    <p><span class="copy-title">最后更新:</span>2019-10-25, 00:34:49</p>
+    <p><span class="copy-title">最后更新:</span>2019-10-25, 23:24:04</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/10/22/PHP%E7%AC%94%E8%AE%B0(%E4%B8%80)/" title="PHP笔记">http://yoursite.com/2019/10/22/PHP%E7%AC%94%E8%AE%B0(%E4%B8%80)/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
