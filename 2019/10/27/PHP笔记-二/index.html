@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>PHP笔记 | Hexo</title>
+  <title>PHP笔记(二) | Hexo</title>
   <meta name="keywords" content="">
-  <meta name="description" content="PHP笔记 | Hexo">
+  <meta name="description" content="PHP笔记(二) | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP笔记(二)">
@@ -283,9 +283,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-PHP笔记(一)" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-PHP笔记-二" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">PHP笔记</h1>
+        <h1 class="article-title">PHP笔记(二)</h1>
     
     <div class="article-meta">
         
@@ -295,7 +295,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-10-27 00:56:55'>2019-10-22 19:45</time>
+        创建时间:<time class="date" title='更新时间: 2019-10-27 00:45:03'>2019-10-27 00:33</time>
         
     </div>
     <div class="article-meta">
@@ -317,7 +317,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP介绍"><span class="toc-text">PHP介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#获取PHP语言的帮助"><span class="toc-text">获取PHP语言的帮助</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP环境安装"><span class="toc-text">PHP环境安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#构建虚拟主机"><span class="toc-text">构建虚拟主机</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编辑器选择"><span class="toc-text">编辑器选择</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP基础语法"><span class="toc-text">PHP基础语法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#执行符与空白与注释"><span class="toc-text">执行符与空白与注释</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#弱类型说明"><span class="toc-text">弱类型说明</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#传值与传址"><span class="toc-text">传值与传址</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#可变变量"><span class="toc-text">可变变量</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#变量作用域"><span class="toc-text">变量作用域</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#超全局变量"><span class="toc-text">超全局变量</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#变量检测与删除"><span class="toc-text">变量检测与删除</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#静态变量"><span class="toc-text">静态变量</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据类型"><span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#布尔类型（boolean）"><span class="toc-text">布尔类型（boolean）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#字符串定义"><span class="toc-text">字符串定义</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#header响应头"><span class="toc-text">header响应头</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#字符串转义"><span class="toc-text">字符串转义</span></a></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -333,126 +333,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="PHP介绍"><a href="#PHP介绍" class="headerlink" title="PHP介绍"></a>PHP介绍</h1><hr>
-<p>PHP（英文名：Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。利于学习，使用广泛，主要适用于web开发领域。 </p>
-<h1 id="获取PHP语言的帮助"><a href="#获取PHP语言的帮助" class="headerlink" title="获取PHP语言的帮助"></a>获取PHP语言的帮助</h1><p>php.net</p>
-<h1 id="PHP环境安装"><a href="#PHP环境安装" class="headerlink" title="PHP环境安装"></a>PHP环境安装</h1><p>WAMP（Windows）（推荐）<br>XAMPP（Windows/Mac）<br>Mamp（Mac）（推荐）<br>Lamp（Linux）</p>
-<h1 id="构建虚拟主机"><a href="#构建虚拟主机" class="headerlink" title="构建虚拟主机"></a>构建虚拟主机</h1><p>作用：能够快速定位需要使用的文件，不需要每次都繁琐的打上路径。例：<br>    <a href="http://www.123.com/code/123.php" target="_blank" rel="noopener">www.123.com/code/123.php</a><br>    可以使用虚拟主机创建域名：<br>    123.video（建议使用不常见后缀，常见后缀：com、cn等）<br>    配上文件路径：<br>    E:\wamp\www\code\123.php<br>    之后访问123.video就可以直接使用123.php了</p>
-<h1 id="编辑器选择"><a href="#编辑器选择" class="headerlink" title="编辑器选择"></a>编辑器选择</h1><p>Visual Studio Code（推荐）<br>Sublime Text 3（推荐）<br>phpstorm（收费）</p>
-<h1 id="PHP基础语法"><a href="#PHP基础语法" class="headerlink" title="PHP基础语法"></a>PHP基础语法</h1><p>PHP脚本以<code>&lt;?php</code>开头，以<code>?&gt;</code>结尾：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">'Hello World!'</span><span class="comment">//此处是PHP代码</span></span><br><span class="line">	<span class="comment">//echo为PHP内建函数，表示输出Hello World!</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="执行符与空白与注释"><a href="#执行符与空白与注释" class="headerlink" title="执行符与空白与注释"></a>执行符与空白与注释</h1><p>php通过 ; 来进行执行，并且1次只能执行1个指令。例如：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">	$a=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">echo</span> $a;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-<p>php不认空格只认;可以任意换行，例如：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">'123'</span></span><br><span class="line"></span><br><span class="line">	;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>注释</strong>相当于代码的说明，<strong>很重要</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//单行注释</span><br><span class="line"></span><br><span class="line">#单行注释</span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line">多</span><br><span class="line">行</span><br><span class="line">注</span><br><span class="line">释</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
-
-<h1 id="弱类型说明"><a href="#弱类型说明" class="headerlink" title="弱类型说明"></a>弱类型说明</h1><p>PHP中，我们不必告知变量的数据类型，PHP会根据它的值，自动把变量转换为正确的数据类型（C或C++以及Java等语言中，使用变量之前必须声明变量的名称和数据类型）</p>
-<h1 id="传值与传址"><a href="#传值与传址" class="headerlink" title="传值与传址"></a>传值与传址</h1><p>传值会在内存中开辟一块新的空间，不会影响初始变量的值。而传址则是传递该地址中的内容，会影响初始变量的值，例如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">	$a = 1;</span><br><span class="line">	$b = $a;</span><br><span class="line">	echo $a;</span><br><span class="line">	echo $b;</span><br><span class="line">	$b = 3;</span><br><span class="line">	echo $a;</span><br><span class="line">	echo $b;</span><br><span class="line"> ?&gt;</span><br></pre></td></tr></table></figure>
-<p>上面代码中变量b的值改变不会影响变量a，而：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">	$a = 1;</span><br><span class="line">	$b = &amp;$a;</span><br><span class="line">	echo $a;</span><br><span class="line">	echo $b;</span><br><span class="line">	$b = 3;</span><br><span class="line">	echo $a;</span><br><span class="line">	echo $b;</span><br><span class="line"> ?&gt;</span><br></pre></td></tr></table></figure>
-<p> 以上的代码中变量a和变量b是同一个地址，改变其中一个另一个也会改变</p>
-<h1 id="可变变量"><a href="#可变变量" class="headerlink" title="可变变量"></a>可变变量</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">	$name = user;</span><br><span class="line">	$$name = 123;</span><br><span class="line">	echo $$name;</span><br><span class="line">	echo $user;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
-<p>以上代码中$$name=$user=123，这就是可变变量</p>
-<h1 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h1><p>变量作用域指变量在代码中可以访问的位置</p>
-<h1 id="超全局变量"><a href="#超全局变量" class="headerlink" title="超全局变量"></a>超全局变量</h1><table>
-<thead>
-<tr>
-<th><strong>变量</strong></th>
-<th><strong>说明</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$_GET</td>
-<td>地址栏GET提交</td>
-</tr>
-<tr>
-<td>$_POST</td>
-<td>表单POST提交</td>
-</tr>
-<tr>
-<td>$_FILES</td>
-<td>文件上传变量</td>
-</tr>
-<tr>
-<td>$_SESSION</td>
-<td>会话变量</td>
-</tr>
-<tr>
-<td>$_COOKIE</td>
-<td>cookie值变量</td>
-</tr>
-<tr>
-<td>$GLOBALS</td>
-<td>全局变量</td>
-</tr>
-<tr>
-<td>$_REQUEST</td>
-<td>包含$_GET、$_POST、$_COOKIE</td>
-</tr>
-<tr>
-<td>$_SERVER</td>
-<td>服务器环境变量</td>
-</tr>
-</tbody></table>
-<h1 id="变量检测与删除"><a href="#变量检测与删除" class="headerlink" title="变量检测与删除"></a>变量检测与删除</h1><p>isset判断变量是否存在<br>unset删除变量</p>
-<h1 id="静态变量"><a href="#静态变量" class="headerlink" title="静态变量"></a>静态变量</h1><p>在变量前加上static可以将变量变为静态变量，静态变量循环使用时不会初始化</p>
-<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><table>
-<thead>
-<tr>
-<th><strong>名称</strong></th>
-<th><strong>类型</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>integer</td>
-<td>整型</td>
-</tr>
-<tr>
-<td>float</td>
-<td>浮点型</td>
-</tr>
-<tr>
-<td>string</td>
-<td>字符串</td>
-</tr>
-<tr>
-<td>array</td>
-<td>数组</td>
-</tr>
-<tr>
-<td>object</td>
-<td>资源</td>
-</tr>
-<tr>
-<td>boolean</td>
-<td>布尔</td>
-</tr>
-</tbody></table>
-<h1 id="布尔类型（boolean）"><a href="#布尔类型（boolean）" class="headerlink" title="布尔类型（boolean）"></a>布尔类型（boolean）</h1><p>布尔类型只有ture（真）和false（假）</p>
-<h1 id="字符串定义"><a href="#字符串定义" class="headerlink" title="字符串定义"></a>字符串定义</h1><table>
-<thead>
-<tr>
-<th><strong>名称</strong></th>
-<th><strong>类型</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>单引号</td>
-<td>原样输出</td>
-</tr>
-<tr>
-<td>双引号</td>
-<td>解析变量</td>
-</tr>
-</tbody></table>
-<p><strong>注意：</strong>{}是变量的定界符</p>
-<h1 id="header响应头"><a href="#header响应头" class="headerlink" title="header响应头"></a>header响应头</h1><p>设置浏览器解析内容使用什么编码<br>header(‘Content-Type: text/html; charset=utf-8’);</p>
-<h1 id="字符串转义"><a href="#字符串转义" class="headerlink" title="字符串转义"></a>字符串转义</h1><p>一些具有特殊含义的字符需要进行转义才能正常显示，使用\进行转义</p>
-
+        
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
@@ -465,12 +346,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>PHP笔记</p>
+    <p><span class="copy-title">文章标题:</span>PHP笔记(二)</p>
     
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="gloryemperor">gloryemperor</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-10-22, 19:45:52</p>
-    <p><span class="copy-title">最后更新:</span>2019-10-27, 00:56:55</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/10/22/PHP%E7%AC%94%E8%AE%B0(%E4%B8%80)/" title="PHP笔记">http://yoursite.com/2019/10/22/PHP%E7%AC%94%E8%AE%B0(%E4%B8%80)/</a>
+    <p><span class="copy-title">发布时间:</span>2019-10-27, 00:33:20</p>
+    <p><span class="copy-title">最后更新:</span>2019-10-27, 00:45:03</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/10/27/PHP%E7%AC%94%E8%AE%B0-%E4%BA%8C/" title="PHP笔记(二)">http://yoursite.com/2019/10/27/PHP%E7%AC%94%E8%AE%B0-%E4%BA%8C/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
