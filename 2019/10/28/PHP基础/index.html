@@ -6,14 +6,14 @@
   <meta name="keywords" content="">
   <meta name="description" content="PHP基础 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="PHP介绍 PHP（英文名：Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。利于学习，使用广泛，主要适用于web开发领域。  获取PHP语言的帮助php.net PHP环境安装WAMP（Windows）（推荐）XAMPP（Windows&#x2F;Mac）Mamp（Mac）（推荐）Lamp（Linux） 构建虚拟主机作用：能够快速定位需要使用的文件，不需要每">
+<meta name="description" content="PHP表单处理PHP超全局变量$_GET和$_POST用于收集表单数据 一个简单的HTML表单1234567891011&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;form action=&amp;quot;welcome.php&amp;quot; method=&amp;quot;post&amp;quot;&amp;gt;Name:&amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;n">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PHP笔记(一)">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;27&#x2F;PHP%E7%AC%94%E8%AE%B0-%E4%B8%80&#x2F;index.html">
+<meta property="og:title" content="PHP表单">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;11&#x2F;PHP%E8%A1%A8%E5%8D%95&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="PHP介绍 PHP（英文名：Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。利于学习，使用广泛，主要适用于web开发领域。  获取PHP语言的帮助php.net PHP环境安装WAMP（Windows）（推荐）XAMPP（Windows&#x2F;Mac）Mamp（Mac）（推荐）Lamp（Linux） 构建虚拟主机作用：能够快速定位需要使用的文件，不需要每">
+<meta property="og:description" content="PHP表单处理PHP超全局变量$_GET和$_POST用于收集表单数据 一个简单的HTML表单1234567891011&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;form action=&amp;quot;welcome.php&amp;quot; method=&amp;quot;post&amp;quot;&amp;gt;Name:&amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;n">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-06T14:54:11.120Z">
+<meta property="og:updated_time" content="2019-11-11T11:56:54.485Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -56,7 +56,7 @@
     <img class="avatar" src="/img/avatar.jpg" />
 </a>
 <div class="author">
-    <span>gloryemperor</span>
+    <span>Eaven</span>
 </div>
 
 <div class="icon">
@@ -234,7 +234,7 @@
     <div class="friends-content">
         <ul>
             
-            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            <li><a target="_blank" href="https://www.dark5.net/">5号黯区</a></li>
             
         </ul>
     </div>
@@ -258,6 +258,14 @@
     <nav id="title-list-nav">
         
         <a  class=""
+           href="/2019/11/11/PHP%E8%A1%A8%E5%8D%95/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="PHP表单">PHP表单</span>
+            <span class="post-date" title="2019-11-11 09:43:37">2019/11/11</span>
+        </a>
+        
+        <a  class=""
            href="/2019/10/27/PHP%E7%AC%94%E8%AE%B0-%E4%B8%80/"
            data-tag=""
            data-author="" >
@@ -271,14 +279,6 @@
            data-author="" >
             <span class="post-title" title="PHP笔记(二)">PHP笔记(二)</span>
             <span class="post-date" title="2019-10-27 00:33:20">2019/10/27</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/11/11/PHP%E8%A1%A8%E5%8D%95/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="PHP表单">PHP表单</span>
-            <span class="post-date" title="2019-11-11 09:43:37">2019/11/11</span>
         </a>
         
         <a  class=""
@@ -313,7 +313,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-06 23:40:26'>2019-10-28 23:07</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-19 14:54:47'>2019-10-28 23:07</time>
         
     </div>
     <div class="article-meta">
@@ -331,11 +331,22 @@
         </span>
         
         
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
     </div>
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP简介"><span class="toc-text">PHP简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP语法"><span class="toc-text">PHP语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#基础PHP语法"><span class="toc-text">基础PHP语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP中的注释"><span class="toc-text">PHP中的注释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP大小写敏感"><span class="toc-text">PHP大小写敏感</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP变量"><span class="toc-text">PHP变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#变量规则"><span class="toc-text">变量规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建PHP变量"><span class="toc-text">创建PHP变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP变量作用域"><span class="toc-text">PHP变量作用域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-global关键词"><span class="toc-text">PHP global关键词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-static关键词"><span class="toc-text">PHP static关键词</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#echo和print"><span class="toc-text">echo和print</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据类型"><span class="toc-text">数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#字符串"><span class="toc-text">字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整数"><span class="toc-text">整数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#浮点数"><span class="toc-text">浮点数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#逻辑"><span class="toc-text">逻辑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数组"><span class="toc-text">数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对象"><span class="toc-text">对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NULL值"><span class="toc-text">NULL值</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#字符串函数"><span class="toc-text">字符串函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#strlen"><span class="toc-text">strlen()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#str-word-count"><span class="toc-text">str_word_count()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#strrev"><span class="toc-text">strrev()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#strpos"><span class="toc-text">strpos()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#str-replace"><span class="toc-text">str_replace()</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP常量"><span class="toc-text">PHP常量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#常量"><span class="toc-text">常量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置PHP常量"><span class="toc-text">设置PHP常量</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#运算符"><span class="toc-text">运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#算数运算符"><span class="toc-text">算数运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#赋值运算符"><span class="toc-text">赋值运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字符串运算符"><span class="toc-text">字符串运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#递增-递减运算符"><span class="toc-text">递增/递减运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#比较运算符"><span class="toc-text">比较运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#逻辑运算符"><span class="toc-text">逻辑运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数组运算符"><span class="toc-text">数组运算符</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#条件语句"><span class="toc-text">条件语句</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#if语句"><span class="toc-text">if语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#if…else语句"><span class="toc-text">if…else语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#if…elseif…else"><span class="toc-text">if…elseif…else</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#switch语句"><span class="toc-text">switch语句</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP循环"><span class="toc-text">PHP循环</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#while循环"><span class="toc-text">while循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#do-while循环"><span class="toc-text">do..while循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#for循环"><span class="toc-text">for循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#foreach循环"><span class="toc-text">foreach循环</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP函数"><span class="toc-text">PHP函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建用户定义函数"><span class="toc-text">创建用户定义函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#函数参数"><span class="toc-text">函数参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#默认参数值"><span class="toc-text">默认参数值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#函数返回值"><span class="toc-text">函数返回值</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP数组"><span class="toc-text">PHP数组</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是数组"><span class="toc-text">什么是数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建数组"><span class="toc-text">创建数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#索引数组"><span class="toc-text">索引数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#获取数组的长度-count-函数"><span class="toc-text">获取数组的长度-count()函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#遍历索引数组"><span class="toc-text">遍历索引数组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关联数组"><span class="toc-text">关联数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#遍历关联数组"><span class="toc-text">遍历关联数组</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数组排序"><span class="toc-text">数组排序</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#数组的排序函数"><span class="toc-text">数组的排序函数</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#全局变量-超全局变量"><span class="toc-text">全局变量-超全局变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#GLOBALS-引用全局作用域中可用的全部变量"><span class="toc-text">$GLOBALS-引用全局作用域中可用的全部变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SERVER"><span class="toc-text">$_SERVER</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#REQUEST"><span class="toc-text">$_REQUEST</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#POST"><span class="toc-text">$_POST</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GET"><span class="toc-text">$_GET</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP简介"><span class="toc-text">PHP简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP语法"><span class="toc-text">PHP语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#基础PHP语法"><span class="toc-text">基础PHP语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP中的注释"><span class="toc-text">PHP中的注释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP大小写敏感"><span class="toc-text">PHP大小写敏感</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP变量"><span class="toc-text">PHP变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#变量规则"><span class="toc-text">变量规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建PHP变量"><span class="toc-text">创建PHP变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP变量作用域"><span class="toc-text">PHP变量作用域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-global关键词"><span class="toc-text">PHP global关键词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-static关键词"><span class="toc-text">PHP static关键词</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#echo和print"><span class="toc-text">echo和print</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据类型"><span class="toc-text">数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#字符串"><span class="toc-text">字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整数"><span class="toc-text">整数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#浮点数"><span class="toc-text">浮点数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#逻辑"><span class="toc-text">逻辑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数组"><span class="toc-text">数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对象"><span class="toc-text">对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NULL值"><span class="toc-text">NULL值</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#字符串函数"><span class="toc-text">字符串函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#strlen"><span class="toc-text">strlen()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#str-word-count"><span class="toc-text">str_word_count()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#strrev"><span class="toc-text">strrev()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#strpos"><span class="toc-text">strpos()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#str-replace"><span class="toc-text">str_replace()</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP常量"><span class="toc-text">PHP常量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#常量"><span class="toc-text">常量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置PHP常量"><span class="toc-text">设置PHP常量</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#运算符"><span class="toc-text">运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#算数运算符"><span class="toc-text">算数运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#赋值运算符"><span class="toc-text">赋值运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字符串运算符"><span class="toc-text">字符串运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#递增-递减运算符"><span class="toc-text">递增/递减运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#比较运算符"><span class="toc-text">比较运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#逻辑运算符"><span class="toc-text">逻辑运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数组运算符"><span class="toc-text">数组运算符</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#条件语句"><span class="toc-text">条件语句</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#if语句"><span class="toc-text">if语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#if…else语句"><span class="toc-text">if…else语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#if…elseif…else"><span class="toc-text">if…elseif…else</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#switch语句"><span class="toc-text">switch语句</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP循环"><span class="toc-text">PHP循环</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#while循环"><span class="toc-text">while循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#do-while循环"><span class="toc-text">do..while循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#for循环"><span class="toc-text">for循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#foreach循环"><span class="toc-text">foreach循环</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP函数"><span class="toc-text">PHP函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建用户定义函数"><span class="toc-text">创建用户定义函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#函数参数"><span class="toc-text">函数参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#默认参数值"><span class="toc-text">默认参数值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#函数返回值"><span class="toc-text">函数返回值</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP数组"><span class="toc-text">PHP数组</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是数组"><span class="toc-text">什么是数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建数组"><span class="toc-text">创建数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#索引数组"><span class="toc-text">索引数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#获取数组的长度-count-函数"><span class="toc-text">获取数组的长度-count()函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#遍历索引数组"><span class="toc-text">遍历索引数组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关联数组"><span class="toc-text">关联数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#遍历关联数组"><span class="toc-text">遍历关联数组</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数组排序"><span class="toc-text">数组排序</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#数组的排序函数"><span class="toc-text">数组的排序函数</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#全局变量-超全局变量"><span class="toc-text">全局变量-超全局变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#GLOBALS-引用全局作用域中可用的全部变量"><span class="toc-text">$GLOBALS-引用全局作用域中可用的全部变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SERVER"><span class="toc-text">$_SERVER</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#REQUEST"><span class="toc-text">$_REQUEST</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#POST"><span class="toc-text">$_POST</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GET"><span class="toc-text">$_GET</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#魔术常量"><span class="toc-text">魔术常量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#PHP-魔术常量"><span class="toc-text">PHP 魔术常量</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#命名空间"><span class="toc-text">命名空间</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -642,6 +653,18 @@
 <h2 id="REQUEST"><a href="#REQUEST" class="headerlink" title="$_REQUEST"></a>$_REQUEST</h2><p>PHP $_REQUEST用于收集HTML表单是的数据<br>当用户通过点击提交按钮来提交表单数据时，表单数据将发送到<form>标签的action属性中指定的脚本文件，然后，我们可以使用超全局变量$_REQUEST来收集input字段的值</p>
 <h2 id="POST"><a href="#POST" class="headerlink" title="$_POST"></a>$_POST</h2><p>PHP $_POST广泛用于收集提交method=”post”的HTML表单后的表单数据。$_POST也常用于传递变量<br>当用户点击提交按钮来提交数据后，表单数据会发送到 <form> 标签的 action 属性中指定的文件，然后，我们可以使用超全局变量 $_POST 来收集输入字段的值</p>
 <h2 id="GET"><a href="#GET" class="headerlink" title="$_GET"></a>$_GET</h2><p>PHP $_GET可用于收集提交HTML表单(method=”get”)之后的表单数据<br>$_GET也可以收集URL中的发送的数据</p>
+<h1 id="魔术常量"><a href="#魔术常量" class="headerlink" title="魔术常量"></a>魔术常量</h1><h2 id="PHP-魔术常量"><a href="#PHP-魔术常量" class="headerlink" title="PHP 魔术常量"></a>PHP 魔术常量</h2><p>PHP 向它运行的任何脚本提供了大量的预定义常量。<br>不过很多常量都是由不同的扩展库定义的，只有在加载了这些扩展库时才会出现，或者动态加载后，或者在编译时已经包括进去了。<br>有八个魔术常量它们的值随着它们在代码中的位置改变而改变。</p>
+<ul>
+<li>__LINE__：文件当前行号</li>
+<li>__FILE__：文件的完整路径和路径名</li>
+<li>__DIR__：文件所在的目录</li>
+<li>__FUNCTION__：函数名称</li>
+<li>__CLASS__：类的名称</li>
+<li>__TRAIT__：Trait的名字</li>
+<li>__METHOD__：类的方法名</li>
+<li>__NAMESPACE__：当前命名空间的名称</li>
+</ul>
+<h1 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h1><p>从广义上来说，命名空间是一种封装事物的方法</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
@@ -657,15 +680,36 @@
 <div class="article_copyright">
     <p><span class="copy-title">文章标题:</span>PHP基础</p>
     
-    <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="gloryemperor">gloryemperor</a></p>
+    <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="Eaven">Eaven</a></p>
     <p><span class="copy-title">发布时间:</span>2019-10-28, 23:07:40</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-06, 23:40:26</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-19, 14:54:47</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/10/28/PHP%E5%9F%BA%E7%A1%80/" title="PHP基础">http://yoursite.com/2019/10/28/PHP%E5%9F%BA%E7%A1%80/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
 </div>
 
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            repo: 'GloryEmperor.github.io',
+            owner: 'GloryEmperor',
+            admin: ['Eaven'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
 
 
 
@@ -677,7 +721,7 @@
 
     </div>
     <div class="copyright">
-        <p class="footer-entry">©2016-2019 Yelog</p>
+        <p class="footer-entry">©2016-2019 Eaven</p>
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
     </div>

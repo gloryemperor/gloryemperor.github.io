@@ -6,14 +6,14 @@
   <meta name="keywords" content="">
   <meta name="description" content="PHP表单 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="PHP介绍 PHP（英文名：Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。利于学习，使用广泛，主要适用于web开发领域。  获取PHP语言的帮助php.net PHP环境安装WAMP（Windows）（推荐）XAMPP（Windows&#x2F;Mac）Mamp（Mac）（推荐）Lamp（Linux） 构建虚拟主机作用：能够快速定位需要使用的文件，不需要每">
+<meta name="description" content="PHP表单处理PHP超全局变量$_GET和$_POST用于收集表单数据 一个简单的HTML表单1234567891011&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;form action=&amp;quot;welcome.php&amp;quot; method=&amp;quot;post&amp;quot;&amp;gt;Name:&amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;n">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PHP笔记(一)">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;27&#x2F;PHP%E7%AC%94%E8%AE%B0-%E4%B8%80&#x2F;index.html">
+<meta property="og:title" content="PHP表单">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;11&#x2F;PHP%E8%A1%A8%E5%8D%95&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="PHP介绍 PHP（英文名：Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。利于学习，使用广泛，主要适用于web开发领域。  获取PHP语言的帮助php.net PHP环境安装WAMP（Windows）（推荐）XAMPP（Windows&#x2F;Mac）Mamp（Mac）（推荐）Lamp（Linux） 构建虚拟主机作用：能够快速定位需要使用的文件，不需要每">
+<meta property="og:description" content="PHP表单处理PHP超全局变量$_GET和$_POST用于收集表单数据 一个简单的HTML表单1234567891011&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;form action=&amp;quot;welcome.php&amp;quot; method=&amp;quot;post&amp;quot;&amp;gt;Name:&amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;n">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-06T14:54:11.120Z">
+<meta property="og:updated_time" content="2019-11-11T11:56:54.485Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -56,7 +56,7 @@
     <img class="avatar" src="/img/avatar.jpg" />
 </a>
 <div class="author">
-    <span>gloryemperor</span>
+    <span>Eaven</span>
 </div>
 
 <div class="icon">
@@ -234,7 +234,7 @@
     <div class="friends-content">
         <ul>
             
-            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            <li><a target="_blank" href="https://www.dark5.net/">5号黯区</a></li>
             
         </ul>
     </div>
@@ -258,6 +258,14 @@
     <nav id="title-list-nav">
         
         <a  class=""
+           href="/2019/11/11/PHP%E8%A1%A8%E5%8D%95/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="PHP表单">PHP表单</span>
+            <span class="post-date" title="2019-11-11 09:43:37">2019/11/11</span>
+        </a>
+        
+        <a  class=""
            href="/2019/10/27/PHP%E7%AC%94%E8%AE%B0-%E4%B8%80/"
            data-tag=""
            data-author="" >
@@ -271,14 +279,6 @@
            data-author="" >
             <span class="post-title" title="PHP笔记(二)">PHP笔记(二)</span>
             <span class="post-date" title="2019-10-27 00:33:20">2019/10/27</span>
-        </a>
-        
-        <a  class=""
-           href="/2019/11/11/PHP%E8%A1%A8%E5%8D%95/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="PHP表单">PHP表单</span>
-            <span class="post-date" title="2019-11-11 09:43:37">2019/11/11</span>
         </a>
         
         <a  class=""
@@ -313,7 +313,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-11 09:43:37'>2019-11-11 09:43</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-11 19:56:54'>2019-11-11 09:43</time>
         
     </div>
     <div class="article-meta">
@@ -331,11 +331,22 @@
         </span>
         
         
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
     </div>
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP表单处理"><span class="toc-text">PHP表单处理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一个简单的HTML表单"><span class="toc-text">一个简单的HTML表单</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GET-vs-POST"><span class="toc-text">GET vs POST</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#何时使用-GET"><span class="toc-text">何时使用$_GET?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#何时使用POST"><span class="toc-text">何时使用POST</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP表单验证"><span class="toc-text">PHP表单验证</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#本文字段"><span class="toc-text">本文字段</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单选按钮"><span class="toc-text">单选按钮</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表单元素"><span class="toc-text">表单元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是-SERVER-“PHP-SELF”-变量？"><span class="toc-text">什么是$_SERVER[“PHP_SELF”]变量？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是htmlspecialchars-函数？"><span class="toc-text">什么是htmlspecialchars()函数？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于PHP表单安全性的重要提示"><span class="toc-text">关于PHP表单安全性的重要提示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何避免-SERVER-“PHP-SELF”-被利用"><span class="toc-text">如何避免$_SERVER[“PHP_SELF”]被利用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通过PHP验证表单数据"><span class="toc-text">通过PHP验证表单数据</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -351,7 +362,66 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="PHP表单处理"><a href="#PHP表单处理" class="headerlink" title="PHP表单处理"></a>PHP表单处理</h1><p>PHP超全局变量$_GET和$_POST用于收集表单数据</p>
+<h2 id="一个简单的HTML表单"><a href="#一个简单的HTML表单" class="headerlink" title="一个简单的HTML表单"></a>一个简单的HTML表单</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;form action=&quot;welcome.php&quot; method=&quot;post&quot;&gt;</span><br><span class="line">Name:&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;br/&gt;</span><br><span class="line">E-mail:&lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;&lt;br/&gt;</span><br><span class="line">&lt;input type=&quot;submit&quot;&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>当用户填写此表单并点击提交后，表单数据会发送到名为”welcome.php”的PHP文件供处理。表单数据时通过HTTP POST方式发送的<br>“welcome.php”文件是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">Welcome &lt;?php echo $_POST[&quot;name&quot;];?&gt;&lt;br/&gt;</span><br><span class="line">Your email address is: &lt;?php echo $_POST[&quot;email&quot;];?&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>使用HTTP GET方法也能得到同样的结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;form action=&quot;welcome_get.php&quot; method=&quot;get&quot;&gt;</span><br><span class="line">Name:&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;br/&gt;</span><br><span class="line">E-mail:&lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;&lt;br/&gt;</span><br><span class="line">&lt;input type=&quot;submit&quot;&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>“welcome_get.php”文件是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">Welcome &lt;?php echo $_GET[&quot;name&quot;];?&gt;&lt;br/&gt;</span><br><span class="line">Your email address is: &lt;?php echo $_GET[&quot;email&quot;];?&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>注意：</strong>在处理PHP表单时请关注安全</p>
+<h2 id="GET-vs-POST"><a href="#GET-vs-POST" class="headerlink" title="GET vs POST"></a>GET vs POST</h2><p>GET和POST都创建数组。此数组包含键/值对，其中的键是表单控件的名称，而值是来自用户的输入数据<br>GET和POST被视作$_GET和$_POST。它们是超全局变量，这意味着对它们的访问无需考虑作用域-无需任何特殊代码，您能够从任何函数、类或文件访问它们<br>$_GET是通过URL参数传递到当前脚本的变量数组<br>$_POST是通过HTTP POST传递到当前脚本的变量数组</p>
+<h2 id="何时使用-GET"><a href="#何时使用-GET" class="headerlink" title="何时使用$_GET?"></a>何时使用$_GET?</h2><p>通过GET方法从表单发送的信息<strong>对任何人都是可见的</strong>（所有变量名和值都显示在URL中）。GET对所发送的信息的数量也<strong>有限制</strong>。限制在大约2000个字符。不过由于变量显示在URL中，把页面添加进书签中也更为方便<br>GET可用于发送非敏感的数据<br><strong>注意：</strong>绝对不能用GET来发送密码或其他敏感数据信息！</p>
+<h2 id="何时使用POST"><a href="#何时使用POST" class="headerlink" title="何时使用POST"></a>何时使用POST</h2><p>通过POST方法从表单发送的信息的<strong>对其他人是不可见的</strong>（所有名称/值会被嵌入HTTP请求的主体中），并且对所发送信息的数量也<strong>无限制</strong><br>此外POST支持高阶功能，比如在向服务器上传文件时进行multi-part二进制输入<br>不过由于变量未显示在URL中，也就无法将页面添加到书签<br><strong>提示：开发者偏爱POST来发送表单数据</strong></p>
+<h1 id="PHP表单验证"><a href="#PHP表单验证" class="headerlink" title="PHP表单验证"></a>PHP表单验证</h1><p><strong>提示：</strong>在处理表单时请重视安全性</p>
+<p>HTML表单包含多种输入字段：必填和可选的文本字段、单选按钮以及提交按钮。例如：</p>
+<table>
+<thead>
+<tr>
+<th><strong>字段</strong></th>
+<th><strong>验证规则</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Name</td>
+<td>必填。必须包含字母和空格</td>
+</tr>
+<tr>
+<td>E-mail</td>
+<td>必填。必须包含有效的电子邮件地址</td>
+</tr>
+<tr>
+<td>Website</td>
+<td>可选。如果填写，则必须包含有效的URL</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>可选。多行输入字段(文本框)</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>必填。必须选择一项</td>
+</tr>
+</tbody></table>
+<h2 id="本文字段"><a href="#本文字段" class="headerlink" title="本文字段"></a>本文字段</h2><p>name、email和website属于文本输入元素，comment字段时文本框。HTML代码是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name: &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;</span><br><span class="line">E-mail: &lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;</span><br><span class="line">Website: &lt;input type=&quot;text&quot; name=&quot;website&quot;&gt;</span><br><span class="line">Comment: &lt;textarea name=&quot;comment&quot; rows=&quot;5&quot; cols=&quot;40&quot;&gt;&lt;/textarea&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="单选按钮"><a href="#单选按钮" class="headerlink" title="单选按钮"></a>单选按钮</h2><p>gender字段是单选按钮，HTML代码是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Gender:</span><br><span class="line">&lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt;Female</span><br><span class="line">&lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;male&quot;&gt;Male</span><br></pre></td></tr></table></figure>
+
+<h2 id="表单元素"><a href="#表单元素" class="headerlink" title="表单元素"></a>表单元素</h2><p>表单的HTML代码是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;form method=&quot;post&quot; action=&quot;&lt;?php echo htmlspecialchars($_SERVER[&quot;PHP_SELF&quot;]);?&gt;&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>当提交此表单时，通过method=”post”发送表单数据</p>
+<h2 id="什么是-SERVER-“PHP-SELF”-变量？"><a href="#什么是-SERVER-“PHP-SELF”-变量？" class="headerlink" title="什么是$_SERVER[“PHP_SELF”]变量？"></a>什么是$_SERVER[“PHP_SELF”]变量？</h2><p>$_SERVER[“PHP_SELF”]是一种超全局变量，它返回当前执行脚本的文件名<br>因此，$_SERVER[“PHP_SELF”]将表单数据发送到页面本身，而不是跳转到另一张页面。这样，用户就能在表单页面获得错误提示信息</p>
+<h2 id="什么是htmlspecialchars-函数？"><a href="#什么是htmlspecialchars-函数？" class="headerlink" title="什么是htmlspecialchars()函数？"></a>什么是htmlspecialchars()函数？</h2><p>htmlspecialchars()函数把特殊字符转换为HTML实体。这意味着&lt;和&gt;之类的HTML字符会被替换为?&lt;和&amp;gt;。这样可防止攻击者通过在表单中注入HTML或JavaScript代码（跨站点脚本攻击）对代码进行利用</p>
+<h2 id="关于PHP表单安全性的重要提示"><a href="#关于PHP表单安全性的重要提示" class="headerlink" title="关于PHP表单安全性的重要提示"></a>关于PHP表单安全性的重要提示</h2><p>$_SERVER[“PHP_SELF”]变量能够被黑客利用<br>如果页面使用了PHP_SELF，用户能够输入下划线然后执行跨站点脚本（XSS）</p>
+<h2 id="如何避免-SERVER-“PHP-SELF”-被利用"><a href="#如何避免-SERVER-“PHP-SELF”-被利用" class="headerlink" title="如何避免$_SERVER[“PHP_SELF”]被利用"></a>如何避免$_SERVER[“PHP_SELF”]被利用</h2><p>通过使用htmlspecialchars()函数能够避免$_SERVER[“PHP_SELF”]被利用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;form method=&quot;post&quot; action=&quot;&lt;?php echo htmlspecialchars($_SERVER[&quot;PHP_SELF&quot;]);?&gt;&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="通过PHP验证表单数据"><a href="#通过PHP验证表单数据" class="headerlink" title="通过PHP验证表单数据"></a>通过PHP验证表单数据</h2><p>我们要做的第一件事是通过PHP的htmlspecialchars()函数传递所有变量<br>在用户提交该表单时，我们还要做两件事：<br>1.（通过PHP trim()函数）去除用户输入数据中不必要的字符（多余的空格、制表符、换行）<br>2.（通过PHP stripslashes()函数）删除用户输入数据中的反斜杠（\）</p>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
@@ -366,15 +436,36 @@
 <div class="article_copyright">
     <p><span class="copy-title">文章标题:</span>PHP表单</p>
     
-    <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="gloryemperor">gloryemperor</a></p>
+    <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="Eaven">Eaven</a></p>
     <p><span class="copy-title">发布时间:</span>2019-11-11, 09:43:37</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-11, 09:43:37</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-11, 19:56:54</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/11/PHP%E8%A1%A8%E5%8D%95/" title="PHP表单">http://yoursite.com/2019/11/11/PHP%E8%A1%A8%E5%8D%95/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
 </div>
 
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            repo: 'GloryEmperor.github.io',
+            owner: 'GloryEmperor',
+            admin: ['Eaven'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
 
 
 
@@ -386,7 +477,7 @@
 
     </div>
     <div class="copyright">
-        <p class="footer-entry">©2016-2019 Yelog</p>
+        <p class="footer-entry">©2016-2019 Eaven</p>
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
     </div>
